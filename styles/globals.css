@@ -35,7 +35,10 @@
 
     --radius: 0.5rem;
 
+    /* figma variables */
     --dark-blue: 240 19% 9%;
+    --yellowish: 25 100% 92%;
+    --light-brown: 23 100% 86%;
   }
 
   .dark {

@@ -2,7 +2,7 @@ import "@/styles/globals.css"
 import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
+import { fontSans, fontSerif } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
@@ -37,7 +37,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body
           className={cn(
             "h-full bg-background font-sans antialiased",
-            fontSans.variable
+            fontSans.variable,
+            fontSerif.variable
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

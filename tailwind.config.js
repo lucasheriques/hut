@@ -15,6 +15,8 @@ module.exports = {
     extend: {
       colors: {
         darkBlue: "hsl(var(--dark-blue))",
+        yellowish: "hsl(var(--yellowish))",
+        lightBrown: "hsl(var(--light-brown))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +58,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        serif: ["var(--font-serif)", ...fontFamily.serif],
       },
       keyframes: {
         "accordion-down": {
