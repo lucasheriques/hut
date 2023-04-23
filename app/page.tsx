@@ -9,7 +9,7 @@ import LatestArticles from "@/components/home/latest-articles"
 
 export default function IndexPage() {
   return (
-    <>
+    <div>
       <Hero />
       <LatestArticles />
       <AboutTheHut />
@@ -33,6 +33,6 @@ export default function IndexPage() {
           </Link>
         </div>
       </section> */}
-    </>
+    </div>
   )
 }
