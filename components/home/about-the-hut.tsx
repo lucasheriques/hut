@@ -37,7 +37,7 @@ function AboutTheHut() {
           />
         </div>
       </section>
-      <div className="-mt-8 w-full xl:-mt-16">
+      <div className="pointer-events-none -mt-8 w-full select-none xl:-mt-16">
         <Image src={waves} alt="wave" className="w-full" />
       </div>
     </div>

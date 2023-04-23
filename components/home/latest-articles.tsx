@@ -9,7 +9,7 @@ function LatestArticles() {
           Latest Crafts and Articles
         </h2>
       </section>
-      <div className="w-full">
+      <div className="pointer-events-none w-full select-none">
         <Image src={articlesWave} alt="wave" className="w-full" />
       </div>
     </div>

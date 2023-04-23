@@ -32,12 +32,12 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="flex">
+          <div className="pointer-events-none flex">
             <Image src={heroHutHq} alt="light-bg" width={745} />
           </div>
         </div>
       </section>
-      <div className="w-full">
+      <div className="pointer-events-none w-full select-none">
         <Image src={wave} alt="wave" className="w-full" />
       </div>
     </div>
