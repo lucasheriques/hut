@@ -44,12 +44,12 @@ function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
 
 function Skills() {
   return (
-    <div className="bg-brown px-8 pb-64 text-aboutTextColor">
-      <section className="container flex border-aboutBorderColor px-0 shadow md:border-2">
-        <div className="mt-9 hidden w-full md:block">
+    <div className="bg-brown px-8 pb-32 text-aboutTextColor">
+      <section className="container flex border-aboutBorderColor px-0  lg:border-2">
+        <div className="mt-9 hidden w-full lg:block">
           <Image src={firstImagehq} height={550} alt="bunch of leaves" />
         </div>
-        <div className="mx-8 flex min-w-[500px] flex-1 flex-col justify-center space-y-8 text-lg">
+        <div className="mx-8 flex flex-1 flex-col justify-center space-y-8 lg:flex xl:min-w-[500px] xl:text-xl">
           <h2 className="font-serif text-3xl font-bold">Skills & Expertise</h2>
           <p>
             {`
@@ -100,7 +100,7 @@ function Skills() {
             </li>
           </ul>
         </div>
-        <div className="-mt-9 hidden w-full md:block">
+        <div className="-mt-9 hidden w-full lg:block">
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>

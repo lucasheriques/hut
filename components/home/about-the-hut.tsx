@@ -6,9 +6,9 @@ import programmer from "public/about/programmer.webp"
 function AboutTheHut() {
   return (
     <div className="bg-lightBrown text-gray-900">
-      <section className="container min-h-[600px]">
-        <div className="flex space-x-16 px-16 pb-60">
-          <div className="flex-1">
+      <section className="container min-h-[600px] px-8">
+        <div className="flex pb-60 md:space-x-16 md:px-16">
+          <div className="hidden flex-1 md:block">
             <Image src={programmer} alt="about hut" width={500} />
           </div>
           <div className="flex-1 space-y-8 text-xl">

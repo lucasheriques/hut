@@ -32,7 +32,7 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="pointer-events-none flex">
+          <div className="pointer-events-none hidden md:flex">
             <Image src={heroHutHq} alt="light-bg" width={745} />
           </div>
         </div>
