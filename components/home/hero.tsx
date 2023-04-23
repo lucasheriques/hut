@@ -20,7 +20,16 @@ function Hero() {
 
             <div className="w-full text-center text-xl">
               <p className="pb-4">CMD + K for quick navigation</p>
-              <p>Articles | Crafts | Resume | Contact</p>
+              <p>
+                Articles | Crafts |{" "}
+                <a
+                  href="https://standardresume.co/r/lucasfaria"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </p>
             </div>
           </div>
           <div className="flex">
