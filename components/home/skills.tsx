@@ -45,11 +45,11 @@ function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
 function Skills() {
   return (
     <div className="bg-brown px-8 pb-32 text-aboutTextColor">
-      <section className="container flex border-aboutBorderColor px-0  lg:border-2">
+      <section className="container flex border-aboutBorderColor px-0 lg:border-2">
         <div className="mt-9 hidden w-full lg:block">
           <Image src={firstImagehq} height={550} alt="bunch of leaves" />
         </div>
-        <div className="mx-8 flex flex-1 flex-col justify-center space-y-8 lg:flex xl:min-w-[500px] xl:text-xl">
+        <div className="flex flex-1 flex-col justify-center space-y-8 md:mx-8 lg:flex xl:min-w-[500px] xl:text-xl">
           <h2 className="font-serif text-3xl font-bold">Skills & Expertise</h2>
           <p>
             {`
@@ -61,7 +61,7 @@ function Skills() {
             {`Below you will find a list of my favorite tools and technologies, but I'm always eager to learn new things and expand my skillset.`}
           </p>
 
-          <ul className="flex gap-x-4 text-2xl">
+          <ul className="flex flex-wrap gap-4 text-2xl">
             <li>
               <SkillsWithTooltips icon={<SiHtml5 />} name="HTML5" />
             </li>
