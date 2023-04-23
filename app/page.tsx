@@ -6,6 +6,7 @@ import { buttonVariants } from "@/components/ui/button"
 import AboutTheHut from "@/components/home/about-the-hut"
 import Hero from "@/components/home/hero"
 import LatestArticles from "@/components/home/latest-articles"
+import Skills from "@/components/home/skills"
 
 export default function IndexPage() {
   return (
@@ -13,6 +14,7 @@ export default function IndexPage() {
       <Hero />
       <LatestArticles />
       <AboutTheHut />
+      <Skills />
       {/* <section className="container relative grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex gap-4">
           <Link

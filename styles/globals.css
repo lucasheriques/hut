@@ -39,6 +39,9 @@
     --dark-blue: 240 19% 9%;
     --yellowish: 25 100% 92%;
     --light-brown: 23 100% 86%;
+    --brown: 6 31% 13%;
+    --about-border-color: 28 43% 65%;
+    --about-text-color: 36 64% 69%;
   }
 
   .dark {
