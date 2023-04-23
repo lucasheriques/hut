@@ -19,6 +19,7 @@ module.exports = {
         lightBrown: "hsl(var(--light-brown))",
         aboutBorderColor: "hsl(var(--about-border-color))",
         aboutTextColor: "hsl(var(--about-text-color))",
+        footerBgColor: "hsl(var(--footer-bg-color))",
         brown: "hsl(var(--brown))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

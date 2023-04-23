@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import Image from "next/image"
 import firstImagehq from "public/skills/skills-1-light-hq.webp"
 import secondImagehq from "public/skills/skills-2-light-hq.webp"
+import wave from "public/skills/wave.svg"
 import {
   SiAmazondynamodb,
   SiAwsamplify,
@@ -44,16 +45,15 @@ function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
 
 function Skills() {
   return (
-    <div className="bg-brown px-8 pb-32 text-aboutTextColor">
+    <div className="bg-brown text-aboutTextColor">
       <section className="container flex border-aboutBorderColor px-0 lg:border-2">
         <div className="mt-9 hidden w-full lg:block">
           <Image src={firstImagehq} height={550} alt="bunch of leaves" />
         </div>
-        <div className="flex flex-1 flex-col justify-center space-y-8 md:mx-8 lg:flex xl:min-w-[500px] xl:text-xl">
+        <div className="flex flex-1 flex-col justify-center space-y-8 text-justify md:mx-8 lg:flex xl:min-w-[500px] xl:text-xl">
           <h2 className="font-serif text-3xl font-bold">Skills & Expertise</h2>
           <p>
-            {`
-          In the ever-evolving forest of web development, I thrive as an adaptable engineer, crafting seamless digital experiences with nature's finesse.
+            {`In the ever-evolving forest of web development, I thrive as an adaptable engineer, crafting seamless digital experiences with nature's finesse.
           My expertise blossoms across a wide spectrum of technologies, and my curiosity propels me towards the uncharted realms of knowledge.
           With each new endeavor, I cultivate my skills and embrace the beauty of continuous growth.`}
           </p>
@@ -104,6 +104,9 @@ function Skills() {
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>
+      <div className="pointer-events-none w-full select-none pt-32">
+        <Image src={wave} alt="wave" className="w-full" />
+      </div>
     </div>
   )
 }
