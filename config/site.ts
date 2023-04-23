@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Lucas' Hut: Crafting Delightful Web Experiences",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Lucas, a software engineer focusing in the web, brings ideas to life in his cozy, nature-inspired workspace, creating digital experiences that spark joy and resonate with users.",
   mainNav: [
     {
       title: "Home",
