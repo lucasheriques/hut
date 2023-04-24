@@ -6,20 +6,20 @@ import wave from "../../public/wave.svg"
 function Hero() {
   return (
     <div className="bg-darkBlue">
-      <section className="container flex flex-col justify-between bg-darkBlue text-white lg:-mb-16 2xl:-mb-32">
-        <div className="flex justify-around  pl-8 pr-4 pt-2">
+      <section className="container flex flex-col justify-between bg-darkBlue py-8 text-white md:py-0 lg:-mb-16 2xl:-mb-32">
+        <div className="flex justify-around">
           <div className="flex flex-col items-center justify-center">
             <div className="w-full pb-12 text-center">
-              <h1 className="pb-2 font-serif text-3xl font-bold">
+              <h1 className="pb-2 font-serif text-xl font-bold md:text-2xl lg:text-3xl">
                 Welcome to {"Lucas'"} Hut
               </h1>
-              <h2 className="text-xl text-amber-600">
+              <h2 className="text-lg text-amber-600 lg:text-xl">
                 Crafter of Web Experiences that Spark Joy
               </h2>
             </div>
 
-            <div className="w-full text-center text-xl">
-              <p className="pb-4">CMD + K for quick navigation</p>
+            <div className="w-full text-center lg:text-xl">
+              <p className="pb-4">⌘ + K for quick navigation</p>
               <p>
                 Articles | Crafts |{" "}
                 <a
@@ -38,6 +38,9 @@ function Hero() {
         </div>
       </section>
       <div className="pointer-events-none w-full select-none">
+        <div className="flex md:hidden">
+          <Image src={heroHutHq} alt="light-bg" />
+        </div>
         <Image src={wave} alt="wave" className="w-full" />
       </div>
     </div>

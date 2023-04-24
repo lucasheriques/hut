@@ -3,54 +3,17 @@ import Image from "next/image"
 import firstImagehq from "public/skills/skills-1-light-hq.webp"
 import secondImagehq from "public/skills/skills-2-light-hq.webp"
 import wave from "public/skills/wave.svg"
-import {
-  SiAmazondynamodb,
-  SiAwsamplify,
-  SiAwslambda,
-  SiCss3,
-  SiGraphql,
-  SiHtml5,
-  SiJavascript,
-  SiMysql,
-  SiNodedotjs,
-  SiPrisma,
-  SiReact,
-  SiTypescript,
-} from "react-icons/si"
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
-
-type SkillsWithTooltipsProps = {
-  icon: ReactNode
-  name: string
-}
-
-function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
-  return (
-    <TooltipProvider>
-      <Tooltip delayDuration={150}>
-        <TooltipTrigger asChild>{icon}</TooltipTrigger>
-        <TooltipContent>
-          <p>{name}</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-  )
-}
+import SkillsList from "./skills-list"
 
 function Skills() {
   return (
     <div className="bg-brown text-aboutTextColor">
-      <section className="container flex border-aboutBorderColor px-0 lg:border-2">
-        <div className="mt-9 hidden w-full lg:block">
+      <section className="container flex border-aboutBorderColor">
+        <div className="hidden w-full lg:block">
           <Image src={firstImagehq} height={550} alt="bunch of leaves" />
         </div>
-        <div className="flex flex-1 flex-col justify-center space-y-8 text-justify md:mx-8 lg:flex xl:min-w-[500px] xl:text-xl">
+        <div className="flex flex-1 flex-col justify-center space-y-8 text-justify text-lg md:mx-8 lg:flex lg:text-xl xl:min-w-[500px]">
           <h2 className="font-serif text-3xl font-bold">Skills & Expertise</h2>
           <p>
             {`In the ever-evolving forest of web development, I thrive as an adaptable engineer, crafting seamless digital experiences with nature's finesse.
@@ -61,46 +24,9 @@ function Skills() {
             {`Below you will find a list of my favorite tools and technologies, but I'm always eager to learn new things and expand my skillset.`}
           </p>
 
-          <ul className="flex flex-wrap gap-4 text-2xl">
-            <li>
-              <SkillsWithTooltips icon={<SiHtml5 />} name="HTML5" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiCss3 />} name="CSS" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiJavascript />} name="JavaScript" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiTypescript />} name="TypeScript" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiReact />} name="React" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiNodedotjs />} name="Node.js" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiGraphql />} name="GraphQL" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiPrisma />} name="Prisma" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiMysql />} name="MySQL" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiAmazondynamodb />} name="DynamoDB" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiAwsamplify />} name="Amplify" />
-            </li>
-            <li>
-              <SkillsWithTooltips icon={<SiAwslambda />} name="Lambda" />
-            </li>
-          </ul>
+          <SkillsList />
         </div>
-        <div className="-mt-9 hidden w-full lg:block">
+        <div className="-mt-12 hidden w-full lg:block">
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>
