@@ -9,10 +9,10 @@ function Skills() {
   return (
     <div className="relative bg-brown text-aboutTextColor">
       <section className="container flex border-aboutBorderColor">
-        <div className="hidden w-full lg:block">
-          <Image src={firstImagehq} height={550} alt="bunch of leaves" />
+        <div className="hidden flex-1 lg:block">
+          <Image src={firstImagehq} alt="bunch of leaves" />
         </div>
-        <div className="flex flex-1 flex-col justify-center space-y-8 text-justify text-lg md:mx-8 lg:flex lg:text-xl xl:min-w-[500px]">
+        <div className="flex flex-1 flex-col justify-center space-y-8 text-justify text-lg md:mx-8 lg:text-xl">
           <h2 className="font-serif text-3xl font-bold">Skills & Expertise</h2>
           <p>
             {`In the ever-evolving forest of web development, I thrive as an adaptable engineer, crafting seamless digital experiences with nature's finesse.
@@ -22,10 +22,9 @@ function Skills() {
           <p>
             {`Below you will find a list of my favorite tools and technologies, but I'm always eager to learn new things and expand my skillset.`}
           </p>
-
           <SkillsList />
         </div>
-        <div className="-mt-12 hidden w-full lg:block">
+        <div className="-mt-8 hidden flex-1 lg:block">
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>

@@ -5,7 +5,7 @@ function LatestArticles() {
   return (
     <div className="bg-yellowish">
       <section className="min-h-[400px] px-4 sm:px-8">
-        <h2 className="text-center font-serif text-3xl font-bold text-gray-900">
+        <h2 className="text-center font-serif text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl">
           Latest Crafts and Articles
         </h2>
       </section>
