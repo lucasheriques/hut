@@ -40,13 +40,13 @@ function AboutTheHut() {
           <Fade triggerOnce>
             <Image
               src={bottomIllustration}
-              width={1000}
+              className="w-full"
               alt="forest illustration"
             />
           </Fade>
         </div>
       </section>
-      <div className="pointer-events-none relative -mt-8 w-full select-none xl:-mt-16">
+      <div className="pointer-events-none relative -mb-1 -mt-12 w-full select-none">
         <Image src={waves} alt="wave" className="w-full" />
       </div>
     </div>

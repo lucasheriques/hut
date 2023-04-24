@@ -44,7 +44,7 @@ function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
 
 function SkillsList() {
   return (
-    <JackInTheBox cascade>
+    <JackInTheBox cascade triggerOnce>
       <ul className="flex flex-wrap gap-4 text-3xl">
         <li>
           <SkillsWithTooltips icon={<SiHtml5 />} name="HTML5" />

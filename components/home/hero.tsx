@@ -37,8 +37,8 @@ function Hero() {
           </div>
         </div>
       </section>
-      <div className="pointer-events-none w-full select-none">
-        <div className="flex md:hidden">
+      <div className="pointer-events-none  -mb-1 w-full select-none">
+        <div className="mx-auto flex w-2/3 md:hidden">
           <Image src={heroHutHq} alt="light-bg" />
         </div>
         <Image src={wave} alt="wave" className="w-full" />

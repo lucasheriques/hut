@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 import Image from "next/image"
 import firstImagehq from "public/skills/skills-1-light-hq.webp"
 import secondImagehq from "public/skills/skills-2-light-hq.webp"
@@ -8,7 +7,7 @@ import SkillsList from "./skills-list"
 
 function Skills() {
   return (
-    <div className="bg-brown text-aboutTextColor">
+    <div className="relative bg-brown text-aboutTextColor">
       <section className="container flex border-aboutBorderColor">
         <div className="hidden w-full lg:block">
           <Image src={firstImagehq} height={550} alt="bunch of leaves" />
@@ -30,7 +29,7 @@ function Skills() {
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>
-      <div className="pointer-events-none w-full select-none pt-32">
+      <div className="pointer-events-none -mb-1 w-full select-none pt-16">
         <Image src={wave} alt="wave" className="w-full" />
       </div>
     </div>
