@@ -33,7 +33,7 @@ function SkillsWithTooltips({ icon, name }: SkillsWithTooltipsProps) {
   return (
     <TooltipProvider>
       <Tooltip delayDuration={150}>
-        <TooltipTrigger>{icon}</TooltipTrigger>
+        <TooltipTrigger className="cursor-auto">{icon}</TooltipTrigger>
         <TooltipContent>
           <p>{name}</p>
         </TooltipContent>

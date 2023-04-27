@@ -9,7 +9,7 @@ function Skills() {
   return (
     <div className="relative bg-brown text-aboutTextColor">
       <section className="container flex border-aboutBorderColor">
-        <div className="hidden flex-1 lg:block">
+        <div className="hidden flex-1 select-none lg:block">
           <Image src={firstImagehq} alt="bunch of leaves" />
         </div>
         <div className="flex flex-1 flex-col justify-center space-y-8 text-justify text-lg md:mx-8 lg:text-xl">
@@ -24,7 +24,7 @@ function Skills() {
           </p>
           <SkillsList />
         </div>
-        <div className="-mt-8 hidden flex-1 lg:block">
+        <div className="-mt-8 hidden flex-1 select-none lg:block">
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>

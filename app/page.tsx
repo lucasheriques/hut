@@ -6,12 +6,12 @@ import Skills from "@/components/home/skills"
 
 export default function IndexPage() {
   return (
-    <>
+    <div className="selection:bg-amber-400 selection:text-gray-900">
       <Hero />
       <LatestCrafts />
       <AboutTheHut />
       <Skills />
       <Footer />
-    </>
+    </div>
   )
 }

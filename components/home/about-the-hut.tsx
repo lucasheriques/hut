@@ -14,7 +14,7 @@ function AboutTheHut() {
     <div className="bg-lightBrown text-gray-900">
       <section className="container min-h-[600px]">
         <div className="flex pb-60 md:space-x-16 md:px-16">
-          <div className="hidden flex-1 items-center md:flex">
+          <div className="hidden flex-1 select-none items-center md:flex">
             <Fade direction="left" triggerOnce>
               <Image src={programmer} alt="about hut" width={500} />
             </Fade>
@@ -24,7 +24,7 @@ function AboutTheHut() {
               About The Hut
             </h2>
 
-            <Fade triggerOnce direction="right" cascade>
+            <Fade triggerOnce direction="right" cascade duration={500}>
               <p>
                 {`Nestled in nature's embrace, Lucas' Hut is my creative sanctuary where ideas bloom and digital masterpieces come to life.
             Surrounded by tranquility, I craft solutions that resonate with real people and their needs.`}
@@ -40,7 +40,7 @@ function AboutTheHut() {
             </Fade>
           </div>
         </div>
-        <div className="flex w-full justify-center">
+        <div className="flex w-full select-none justify-center">
           <Fade triggerOnce className="flex flex-1 justify-center">
             <Image
               src={bottomIllustration}

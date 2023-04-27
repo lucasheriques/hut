@@ -15,8 +15,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/lucashenfaria",
+    github: "https://github.com/lucasheriques",
+    linkedin: "https://www.linkedin.com/in/lucas-faria",
   },
 }
