@@ -110,7 +110,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="pointer-events-none hidden select-none lg:flex">
+          <div className="hidden select-none lg:flex">
             <Image
               src={heroHutHq}
               alt="a small hut in the woods"
@@ -120,7 +120,7 @@ function Hero() {
           </div>
         </div>
       </section>
-      <div className="pointer-events-none -mb-1 w-full select-none">
+      <div className="-mb-1 w-full select-none">
         <div className="mx-auto flex w-2/3 lg:hidden">
           <Image src={heroHutHq} alt="light-bg" priority />
         </div>

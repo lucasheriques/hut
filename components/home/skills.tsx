@@ -28,7 +28,7 @@ function Skills() {
           <Image src={secondImagehq} className="w-full" alt="bunch of leaves" />
         </div>
       </section>
-      <div className="pointer-events-none -mb-1 w-full select-none pt-16">
+      <div className="-mb-1 w-full select-none pt-16">
         <Image src={wave} alt="wave" className="w-full" />
       </div>
     </div>

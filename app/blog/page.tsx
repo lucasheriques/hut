@@ -22,14 +22,14 @@ export default function IndexPage() {
           </p>
         </div>
         <div className="flex gap-4">
-          <Link
+          {/* <Link
             href={siteConfig.links.docs}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
             Documentation
-          </Link>
+          </Link> */}
           <Link
             target="_blank"
             rel="noreferrer"

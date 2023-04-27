@@ -12,7 +12,7 @@ function LatestCrafts() {
           <i>comming soon</i>
         </p>
       </section>
-      <div className="pointer-events-none w-full select-none">
+      <div className="w-full select-none">
         <Image src={articlesWave} alt="wave" className="w-full" />
       </div>
     </div>

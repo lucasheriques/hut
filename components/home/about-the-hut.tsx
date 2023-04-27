@@ -4,16 +4,15 @@ import Image from "next/image"
 import waves from "public/about/about-waves.svg"
 import bottomIllustration from "public/about/bottom-illustration.webp"
 import programmer from "public/about/programmer.webp"
-import { Fade, Slide } from "react-awesome-reveal"
+import { Fade } from "react-awesome-reveal"
 
 import useWindowSize from "@/hooks/use-window-size"
 
 function AboutTheHut() {
-  const { width } = useWindowSize()
   return (
     <div className="bg-lightBrown text-gray-900">
       <section className="container min-h-[600px]">
-        <div className="flex pb-60 md:space-x-16 md:px-16">
+        <div className="flex pb-16 md:space-x-16 md:px-16 md:pb-48">
           <div className="hidden flex-1 select-none items-center md:flex">
             <Fade direction="left" triggerOnce>
               <Image src={programmer} alt="about hut" width={500} />
@@ -50,7 +49,7 @@ function AboutTheHut() {
           </Fade>
         </div>
       </section>
-      <div className="pointer-events-none relative -mb-1 -mt-12 w-full select-none">
+      <div className="relative -mb-1 -mt-12 w-full select-none">
         <Image src={waves} alt="wave" className="w-full" width={832} />
       </div>
     </div>
